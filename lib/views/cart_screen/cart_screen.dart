@@ -23,7 +23,7 @@ class _CartScreenState extends State<CartScreen> {
       bottomNavigationBar: SizedBox(
         height: 60,
         child: ourButton(
-          color: redColor,
+          color: blackcolor,
           onPress: () {
             Get.to(() => const ShippingDetails());
           },
@@ -33,11 +33,8 @@ class _CartScreenState extends State<CartScreen> {
       ),
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: "Shopping Cart"
-            .text
-            .color(darkFontGrey)
-            .fontFamily(semibold)
-            .make(),
+        title:
+            "Shopping Cart".text.color(blackcolor).fontFamily(semibold).make(),
       ),
       body: StreamBuilder(
         stream: FirestoreServices.getCart(currentUser!.uid),
@@ -48,7 +45,7 @@ class _CartScreenState extends State<CartScreen> {
             );
           } else if (snapshot.data!.docs.isEmpty) {
             return Center(
-              child: "Cart is Empty".text.color(darkFontGrey).make(),
+              child: "Cart is Empty".text.color(blackcolor).make(),
             );
           } else {
             var data = snapshot.data!.docs;
@@ -114,16 +111,6 @@ class _CartScreenState extends State<CartScreen> {
                       .width(context.screenWidth - 60)
                       .roundedSM
                       .make(),
-                  10.heightBox,
-                  //SizedBox(
-                  //width: context.screenWidth - 60,
-                  //child: ourButton(
-                  //color: redColor,
-                  //onPress: () {},
-                  //textColor: whiteColor,
-                  //title: "Proceed to Shipping",
-                  //),
-                  //),
                 ],
               ),
             );

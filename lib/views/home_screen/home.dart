@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
         bottomNavigationBar: Obx(
           () => BottomNavigationBar(
             currentIndex: controller.currentNavIndex.value,
-            selectedItemColor: redColor,
+            selectedItemColor: blackcolor,
             selectedLabelStyle: const TextStyle(fontFamily: semibold),
             type: BottomNavigationBarType.fixed,
             backgroundColor: whiteColor,

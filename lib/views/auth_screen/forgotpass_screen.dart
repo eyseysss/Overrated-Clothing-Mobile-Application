@@ -28,7 +28,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             (context.screenHeight * 0.1).heightBox,
             applogoWidget(),
             10.heightBox,
-            "Forgot your Password?".text.fontFamily(bold).white.size(18).make(),
+            "Forgot Password".text.fontFamily(bold).white.size(18).make(),
             15.heightBox,
             Column(
               children: [
@@ -64,7 +64,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 children: [
                   TextSpan(
                     text: wanttogoback,
-                    style: TextStyle(fontFamily: bold, color: whiteColor),
+                    style: TextStyle(fontFamily: regular, color: whiteColor),
                   ),
                   TextSpan(
                     text: loginbut,

@@ -6,7 +6,6 @@ import 'package:emart_app/controllers/cart_controller.dart';
 import 'package:emart_app/views/home_screen/home.dart';
 import 'package:emart_app/widgets_common/loading_indicator.dart';
 import 'package:emart_app/widgets_common/our_button.dart';
-import 'package:paymongo_sdk/paymongo_sdk.dart';
 import 'package:get/get.dart';
 
 class PaymentMethods extends StatelessWidget {
@@ -35,7 +34,7 @@ class PaymentMethods extends StatelessWidget {
                     VxToast.show(context, msg: "Order Placed successfully");
                     Get.offAll(const Home());
                   },
-                  color: redColor,
+                  color: blackcolor,
                   textColor: whiteColor,
                   title: "Place my order",
                 ),
@@ -44,7 +43,7 @@ class PaymentMethods extends StatelessWidget {
           title: "Choose Payment Method"
               .text
               .fontFamily(semibold)
-              .color(darkFontGrey)
+              .color(blackcolor)
               .make(),
         ),
         body: Padding(

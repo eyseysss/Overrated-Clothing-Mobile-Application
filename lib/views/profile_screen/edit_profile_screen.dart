@@ -46,12 +46,12 @@ class EditProfileScreen extends StatelessWidget {
                         ).box.roundedFull.clip(Clip.antiAlias).make(),
               10.heightBox,
               ourButton(
-                  color: redColor,
+                  color: blackcolor,
                   onPress: () {
                     controller.changeImage(context);
                   },
                   textColor: whiteColor,
-                  title: "change"),
+                  title: "Change Photo"),
               const Divider(),
               20.heightBox,
               customTextField(
@@ -79,7 +79,7 @@ class EditProfileScreen extends StatelessWidget {
                   : SizedBox(
                       width: context.screenWidth - 60,
                       child: ourButton(
-                          color: redColor,
+                          color: blackcolor,
                           onPress: () async {
                             controller.isloading(true);
 
@@ -113,7 +113,7 @@ class EditProfileScreen extends StatelessWidget {
                             }
                           },
                           textColor: whiteColor,
-                          title: "save")),
+                          title: "Save")),
             ],
           )
               .box

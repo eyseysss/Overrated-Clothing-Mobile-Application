@@ -93,7 +93,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       controller.sendMsg(controller.msgController.text);
                       controller.msgController.clear();
                     },
-                    icon: const Icon(Icons.send, color: redColor)),
+                    icon: const Icon(Icons.send, color: blackcolor)),
               ],
             )
                 .box

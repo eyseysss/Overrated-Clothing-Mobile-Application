@@ -53,7 +53,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
                   .text
                   .size(12)
                   .fontFamily(semibold)
-                  .color(darkFontGrey)
+                  .color(blackcolor)
                   .makeCentered()
                   .box
                   .white
@@ -82,7 +82,7 @@ class _CategoryDetailsState extends State<CategoryDetails> {
                 return Expanded(
                   child: "No products found!"
                       .text
-                      .color(darkFontGrey)
+                      .color(whiteColor)
                       .makeCentered(),
                 );
               } else {
@@ -105,8 +105,8 @@ class _CategoryDetailsState extends State<CategoryDetails> {
                             children: [
                               Image.network(
                                 data[index]['p_imgs'][0],
-                                height: 150,
-                                width: 200,
+                                height: 170,
+                                width: 190,
                                 fit: BoxFit.cover,
                               ),
                               "${data[index]['p_name']}"

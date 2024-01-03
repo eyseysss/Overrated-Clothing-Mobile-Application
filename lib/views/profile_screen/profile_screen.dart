@@ -45,22 +45,45 @@ class _ProfileScreenState extends State<ProfileScreen> {
               return SafeArea(
                   child: Column(
                 children: [
-                  //edit profile button
                   Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: const Align(
-                            alignment: Alignment.topRight,
-                            child: Icon(Icons.edit, color: whiteColor))
-                        .onTap(() {
-                      controller.nameController.text = data['name'];
-
-                      Get.to(() => EditProfileScreen(data: data));
-                    }),
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Align(
+                          alignment: Alignment.center,
+                          child: const Icon(Icons.edit, color: whiteColor)
+                              .onTap(() {
+                            controller.nameController.text = data['name'];
+                            Get.to(() => EditProfileScreen(data: data));
+                          }),
+                        ),
+                        SizedBox(width: 10),
+                        Align(
+                          alignment: Alignment.center,
+                          child: TextButton(
+                            onPressed: () {
+                              WidgetsBinding.instance
+                                  .addPostFrameCallback((_) async {
+                                await authController.signoutMethod(context);
+                                await authController.googleSignOut();
+                                Get.offAll(() => const LoginScreen());
+                              });
+                            },
+                            child:
+                                logout.text.fontFamily(semibold).white.make(),
+                            style: ButtonStyle(
+                              side: MaterialStateProperty.all(
+                                  BorderSide(color: Colors.white)),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-
                   //user details section
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 3.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 6.0),
                     child: Row(
                       children: [
                         data['imageUrl'] == ''
@@ -89,21 +112,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             "${data['email']}".text.white.make(),
                           ],
                         )),
-                        OutlinedButton(
-                          style: OutlinedButton.styleFrom(
-                              side: const BorderSide(
-                            color: whiteColor,
-                          )),
-                          onPressed: () async {
-                            await authController.signoutMethod(context);
-                            await authController.googleSignOut();
-                            Get.offAll(() => const LoginScreen());
-                          },
-                          child: logout.text.fontFamily(semibold).white.make(),
-                        )
                       ],
                     ),
                   ),
+
                   10.heightBox,
 
                   FutureBuilder(

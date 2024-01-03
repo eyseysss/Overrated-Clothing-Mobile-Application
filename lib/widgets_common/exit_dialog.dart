@@ -20,14 +20,14 @@ Widget exitDialog(context) {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ourButton(
-                color: redColor,
+                color: blackcolor,
                 onPress: () {
                   SystemNavigator.pop();
                 },
                 textColor: whiteColor,
                 title: "Yes"),
             ourButton(
-                color: redColor,
+                color: blackcolor,
                 onPress: () {
                   Navigator.pop(context);
                 },

@@ -37,14 +37,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
                 children: [
                   Image.asset(
                     categoryImages[index],
-                    height: 120,
+                    height: 160,
                     width: 200,
                     fit: BoxFit.cover,
                   ),
                   10.heightBox,
                   categoriesList[index]
                       .text
-                      .color(darkFontGrey)
+                      .color(blackcolor)
                       .align(TextAlign.center)
                       .make(),
                 ],

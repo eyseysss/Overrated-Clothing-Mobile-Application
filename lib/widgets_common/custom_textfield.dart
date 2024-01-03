@@ -4,7 +4,7 @@ Widget customTextField({String? title, String? hint, controller, isPass}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      title!.text.color(redColor).fontFamily(semibold).size(16).make(),
+      title!.text.color(blackcolor).fontFamily(semibold).size(16).make(),
       5.heightBox,
       TextFormField(
         obscureText: isPass,

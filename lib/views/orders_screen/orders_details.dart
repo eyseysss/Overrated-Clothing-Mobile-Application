@@ -1,7 +1,6 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'dart:typed_data';
-
 import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/views/orders_screen/components/order_place_details.dart';
 import 'package:emart_app/views/orders_screen/components/order_status.dart';

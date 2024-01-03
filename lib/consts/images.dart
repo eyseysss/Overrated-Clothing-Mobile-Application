@@ -1,6 +1,6 @@
 //icons
 const icAdd = "assets/icons/add.png";
-const icAppLogo = "assets/icons/app_logo.png";
+const icAppLogo = "assets/icons/app_logo.jpg";
 const icAppleLogo = "assets/icons/apple_logo.png";
 const icArrow = "assets/icons/arrow.png";
 const icBell = "assets/icons/bell.png";
@@ -37,6 +37,7 @@ const icPoints = "assets/icons/points.png";
 const icProfile = "assets/icons/profile.png";
 const icRefund = "assets/icons/refund.png";
 const icSearch = "assets/icons/search.png";
+const icSeller = "assets/icons/profile.png";
 const icShop = "assets/icons/shop.png";
 const icSplashBg =
     "assets/icons/splash_login_registration_background_image.png";
@@ -52,7 +53,8 @@ const icWholeSale = "assets/icons/wholesale.png";
 
 //images
 
-const imgBackground = "assets/icons/bg.png";
+const imgBackground = "assets/icons/bg_black.png";
+const imgBackground1 = "assets/icons/bg_white.png";
 const imgB1 = "assets/images/b1.jpeg";
 const imgB2 = "assets/images/b2.jpeg";
 const imgB3 = "assets/images/b3.jpeg";
@@ -64,15 +66,15 @@ const imgB8 = "assets/images/b8.jpeg";
 const imgB9 = "assets/images/b9.jpeg";
 const imgB10 = "assets/images/b10.jpeg";
 const imgCod = "assets/images/cod.png";
-const imgFc1 = "assets/images/fc1.jpg";
-const imgFc2 = "assets/images/fc2.jpg";
-const imgFc3 = "assets/images/fc3.jpg";
-const imgFc4 = "assets/images/fc4.jpg";
-const imgFc5 = "assets/images/fc5.jpg";
-const imgFc6 = "assets/images/fc6.jpg";
-const imgFc7 = "assets/images/fc7.jpg";
-const imgFc8 = "assets/images/fc8.jpg";
-const imgFc9 = "assets/images/fc9.jpg";
+const imgFc1 = "assets/images/fc1.png";
+const imgFc2 = "assets/images/fc2.png";
+const imgFc3 = "assets/images/fc3.png";
+const imgFc4 = "assets/images/fc4.png";
+const imgFc5 = "assets/images/fc5.png";
+const imgFc6 = "assets/images/fc6.png";
+const imgFc7 = "assets/images/fc7.png";
+const imgFc8 = "assets/images/fc8.png";
+const imgFc9 = "assets/images/fc9.png";
 const imgFc10 = "assets/images/fc10.jpg";
 const imgFd1 = "assets/images/fd1.jpg";
 const imgFd2 = "assets/images/fd2.jpg";
@@ -120,10 +122,11 @@ const imgSs2 = "assets/images/ss2.jpg";
 const imgSs3 = "assets/images/ss3.jpg";
 const imgSs4 = "assets/images/ss4.jpg";
 const imgSave = "assets/images/save.png";
-const imgSlider1 = "assets/images/slider_1.png";
-const imgSlider2 = "assets/images/slider_2.png";
-const imgSlider3 = "assets/images/slider_3.png";
-const imgSlider4 = "assets/images/slider_4.png";
+const imgSeller = "assets/icons/profile.png";
+const imgSlider1 = "assets/images/banner1.png";
+const imgSlider2 = "assets/images/banner2.png";
+const imgSlider3 = "assets/images/banner3.png";
+const imgSlider4 = "assets/images/banner4.png";
 const imgSslcommerz = "assets/images/sslcommerz.png";
 const imgStripe = "assets/images/stripe.png";
 const imgTwocheckout = "assets/images/twocheckout.png";

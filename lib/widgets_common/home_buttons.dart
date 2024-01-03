@@ -6,7 +6,7 @@ Widget homeButtons({width, height, icon, String? title, onPress}) {
     children: [
       Image.asset(icon, width: 26),
       10.heightBox,
-      title!.text.fontFamily(semibold).color(darkFontGrey).make()
+      title!.text.fontFamily(semibold).color(blackcolor).make()
     ],
   ).box.rounded.white.size(width, height).make();
 }

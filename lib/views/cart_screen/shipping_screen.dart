@@ -30,7 +30,7 @@ class ShippingDetails extends StatelessWidget {
               VxToast.show(context, msg: "Please fill the form");
             }
           },
-          color: redColor,
+          color: blackcolor,
           textColor: whiteColor,
           title: "Continue",
         ),
